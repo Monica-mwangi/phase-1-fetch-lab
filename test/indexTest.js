@@ -14,7 +14,7 @@ describe( "index.js", () => {
       window.fetch = require( 'node-fetch' );
     } );
 
-    it( "sends a fetch request to 'https://anapioficeandfire.com/api/books'", async () => {
+    it( "sends a fetch request to 'https://anapioficeandfire.com/api/bosok'", async () => {
       chai.spy.on( window, 'fetch' );
       await fetchBooks()
       expect( window.fetch, "A fetch to the API was not found" )
